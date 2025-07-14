@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-800 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+                    AI.DEV
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link hover:text-blue-400 transition-colors">Home</a>
+                    <a href="#about" class="nav-link hover:text-blue-400 transition-colors">About</a>
+                    <a href="#skills" class="nav-link hover:text-blue-400 transition-colors">Skills</a>
+                    <a href="#projects" class="nav-link hover:text-blue-400 transition-colors">Projects</a>
+                    <a href="#contact" class="nav-link hover:text-blue-400 transition-colors">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <!-- Theme Toggle Button -->
+                    <button id="theme-toggle" class="theme-toggle-btn relative w-14 h-8 bg-gray-700 rounded-full p-1 transition-all duration-300 hover:bg-gray-600">
+                        <div class="theme-toggle-circle absolute w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300 flex items-center justify-center">
+                            <i class="fas fa-sun text-xs text-yellow-500 theme-icon-sun"></i>
+                            <i class="fas fa-moon text-xs text-blue-500 theme-icon-moon hidden"></i>
+                        </div>
+                    </button>
+                    <button class="md:hidden text-white" id="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="mb-8 floating-animation">
+                <div class="w-32 h-32 mx-auto bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-brain text-4xl text-white"></i>
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 typewriter">
+                AI Developer
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
+                Building intelligent systems that shape the future through machine learning, neural networks, and cutting-edge AI technologies.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <button class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
+                    View My Work
+                </button>
+                <button class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-full transition-all duration-300">
+                    Get In Touch
+                </button>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-2xl text-blue-400"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+                About Me
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-2">Om Kumar</h3>
+                        <p class="text-gray-300">
+                            <i class="fas fa-envelope mr-2 text-blue-400"></i>
+                            om.jhitri@tericsoft.com
+                        </p>
+                        <p class="text-gray-300">
+                            <i class="fas fa-map-marker-alt mr-2 text-blue-400"></i>
+                            Hyderabad, India
+                        </p>
+                    </div>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        I'm a passionate AI developer with 5+ years of experience in machine learning, deep learning, and artificial intelligence. My expertise spans across computer vision, natural language processing, and predictive analytics.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        I specialize in transforming complex data into intelligent solutions that drive business growth and innovation. From building recommendation systems to developing autonomous AI agents, I'm committed to pushing the boundaries of what's possible.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="px-4 py-2 bg-blue-500/20 text-blue-400 rounded-full">Machine Learning</span>
+                        <span class="px-4 py-2 bg-purple-500/20 text-purple-400 rounded-full">Deep Learning</span>
+                        <span class="px-4 py-2 bg-green-500/20 text-green-400 rounded-full">Computer Vision</span>
+                        <span class="px-4 py-2 bg-orange-500/20 text-orange-400 rounded-full">NLP</span>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-full h-80 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-robot text-6xl text-blue-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+                Skills & Expertise
+            </h2>
+            
+            <!-- Technical Skills -->
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="space-y-8">
+                    <h3 class="text-2xl font-semibold text-blue-400 mb-6">Technical Skills</h3>
+                    
+                    <div class="skill-item">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-lg font-medium">Python & Machine Learning</span>
+                            <span class="text-blue-400 font-semibold">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percentage="95"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-lg font-medium">TensorFlow & PyTorch</span>
+                            <span class="text-blue-400 font-semibold">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percentage="90"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-lg font-medium">Computer Vision</span>
+                            <span class="text-blue-400 font-semibold">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percentage="85"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-lg font-medium">Natural Language Processing</span>
+                            <span class="text-blue-400 font-semibold">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percentage="88"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-lg font-medium">Cloud Platforms (AWS, GCP)</span>
+                            <span class="text-blue-400 font-semibold">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percentage="80"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill Categories -->
+                <div class="space-y-8">
+                    <h3 class="text-2xl font-semibold text-purple-400 mb-6">Specializations</h3>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="skill-category-card p-6 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105">
+                            <div class="text-3xl text-blue-400 mb-3">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4 class="font-semibold mb-2">Machine Learning</h4>
+                            <p class="text-sm text-gray-400">Advanced algorithms and model optimization</p>
+                        </div>
+                        
+                        <div class="skill-category-card p-6 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:transform hover:scale-105">
+                            <div class="text-3xl text-purple-400 mb-3">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h4 class="font-semibold mb-2">Computer Vision</h4>
+                            <p class="text-sm text-gray-400">Image processing and recognition systems</p>
+                        </div>
+                        
+                        <div class="skill-category-card p-6 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-green-500 transition-all duration-300 hover:transform hover:scale-105">
+                            <div class="text-3xl text-green-400 mb-3">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h4 class="font-semibold mb-2">NLP</h4>
+                            <p class="text-sm text-gray-400">Language understanding and generation</p>
+                        </div>
+                        
+                        <div class="skill-category-card p-6 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-orange-500 transition-all duration-300 hover:transform hover:scale-105">
+                            <div class="text-3xl text-orange-400 mb-3">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4 class="font-semibold mb-2">Data Science</h4>
+                            <p class="text-sm text-gray-400">Analytics and predictive modeling</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Technologies -->
+            <div class="text-center">
+                <h3 class="text-2xl font-semibold mb-8 gradient-text">Technologies I Work With</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="tech-badge px-6 py-3 bg-blue-500/20 text-blue-400 rounded-full border border-blue-500/30 hover:bg-blue-500/30 transition-all duration-300">Python</span>
+                    <span class="tech-badge px-6 py-3 bg-orange-500/20 text-orange-400 rounded-full border border-orange-500/30 hover:bg-orange-500/30 transition-all duration-300">TensorFlow</span>
+                    <span class="tech-badge px-6 py-3 bg-red-500/20 text-red-400 rounded-full border border-red-500/30 hover:bg-red-500/30 transition-all duration-300">PyTorch</span>
+                    <span class="tech-badge px-6 py-3 bg-green-500/20 text-green-400 rounded-full border border-green-500/30 hover:bg-green-500/30 transition-all duration-300">Scikit-learn</span>
+                    <span class="tech-badge px-6 py-3 bg-purple-500/20 text-purple-400 rounded-full border border-purple-500/30 hover:bg-purple-500/30 transition-all duration-300">Keras</span>
+                    <span class="tech-badge px-6 py-3 bg-yellow-500/20 text-yellow-400 rounded-full border border-yellow-500/30 hover:bg-yellow-500/30 transition-all duration-300">OpenCV</span>
+                    <span class="tech-badge px-6 py-3 bg-indigo-500/20 text-indigo-400 rounded-full border border-indigo-500/30 hover:bg-indigo-500/30 transition-all duration-300">Docker</span>
+                    <span class="tech-badge px-6 py-3 bg-pink-500/20 text-pink-400 rounded-full border border-pink-500/30 hover:bg-pink-500/30 transition-all duration-300">AWS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+                Featured Projects
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card rounded-lg overflow-hidden group">
+                    <div class="relative overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center">
+                            <i class="fas fa-brain text-4xl text-blue-400"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="flex space-x-4">
+                                <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                                </button>
+                                <button class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-colors">
+                                    <i class="fab fa-github mr-2"></i>Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">AI Chatbot Assistant</h3>
+                        <p class="text-gray-400 mb-4">An intelligent conversational AI built with transformer models and fine-tuned for customer service applications.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">NLP</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">Transformers</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">2024</span>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card rounded-lg overflow-hidden group">
+                    <div class="relative overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-green-500/20 to-blue-500/20 flex items-center justify-center">
+                            <i class="fas fa-eye text-4xl text-green-400"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="flex space-x-4">
+                                <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                                </button>
+                                <button class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-colors">
+                                    <i class="fab fa-github mr-2"></i>Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Computer Vision Analytics</h3>
+                        <p class="text-gray-400 mb-4">Real-time object detection and tracking system for retail analytics and security applications.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">OpenCV</span>
+                            <span class="px-3 py-1 bg-red-500/20 text-red-400 rounded-full text-sm">YOLO</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">Deep Learning</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">2024</span>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card rounded-lg overflow-hidden group">
+                    <div class="relative overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center">
+                            <i class="fas fa-chart-line text-4xl text-purple-400"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="flex space-x-4">
+                                <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                                </button>
+                                <button class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-colors">
+                                    <i class="fab fa-github mr-2"></i>Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Predictive Analytics Platform</h3>
+                        <p class="text-gray-400 mb-4">Machine learning platform for financial forecasting and risk assessment with interactive dashboards.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-indigo-500/20 text-indigo-400 rounded-full text-sm">Pandas</span>
+                            <span class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">Scikit-learn</span>
+                            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-sm">Plotly</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">2023</span>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card rounded-lg overflow-hidden group">
+                    <div class="relative overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-orange-500/20 to-red-500/20 flex items-center justify-center">
+                            <i class="fas fa-robot text-4xl text-orange-400"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="flex space-x-4">
+                                <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                                </button>
+                                <button class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-colors">
+                                    <i class="fab fa-github mr-2"></i>Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Autonomous Agent System</h3>
+                        <p class="text-gray-400 mb-4">Reinforcement learning agent for autonomous navigation and decision-making in complex environments.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-red-500/20 text-red-400 rounded-full text-sm">PyTorch</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">RL</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">Gymnasium</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">2023</span>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card rounded-lg overflow-hidden group">
+                    <div class="relative overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-teal-500/20 to-cyan-500/20 flex items-center justify-center">
+                            <i class="fas fa-language text-4xl text-teal-400"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="flex space-x-4">
+                                <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                                </button>
+                                <button class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-colors">
+                                    <i class="fab fa-github mr-2"></i>Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Multi-Language Translator</h3>
+                        <p class="text-gray-400 mb-4">Neural machine translation system supporting 50+ languages with real-time translation capabilities.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">TensorFlow</span>
+                            <span class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">Transformers</span>
+                            <span class="px-3 py-1 bg-pink-500/20 text-pink-400 rounded-full text-sm">HuggingFace</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">2023</span>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card rounded-lg overflow-hidden group">
+                    <div class="relative overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 flex items-center justify-center">
+                            <i class="fas fa-heartbeat text-4xl text-indigo-400"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="flex space-x-4">
+                                <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                                </button>
+                                <button class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-colors">
+                                    <i class="fab fa-github mr-2"></i>Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Healthcare AI Diagnostics</h3>
+                        <p class="text-gray-400 mb-4">Medical image analysis system for early disease detection using convolutional neural networks.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">Keras</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">CNN</span>
+                            <span class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">Medical AI</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">2022</span>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- View More Projects Button -->
+            <div class="text-center mt-12">
+                <button class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
+                    <i class="fab fa-github mr-2"></i>View All Projects on GitHub
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+                Let's Build Something Amazing Together
+            </h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Ready to bring your AI vision to life? Let's discuss your project and create innovative solutions.
+            </p>
+            
+            <!-- Developer Contact Details -->
+            <div class="bg-gray-800/50 rounded-lg p-8 mb-8 max-w-2xl mx-auto border border-gray-700">
+                <h3 class="text-2xl font-semibold text-blue-400 mb-6">Get In Touch</h3>
+                <div class="space-y-4 text-left">
+                    <div class="flex items-center">
+                        <i class="fas fa-user text-blue-400 mr-4 w-6"></i>
+                        <div>
+                            <span class="text-gray-300 font-medium">Name:</span>
+                            <span class="text-white ml-2">Om Kumar</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope text-blue-400 mr-4 w-6"></i>
+                        <div>
+                            <span class="text-gray-300 font-medium">Email:</span>
+                            <a href="mailto:om.jhitri@tericsoft.com" class="text-blue-400 hover:text-blue-300 ml-2 transition-colors">
+                                om.jhitri@tericsoft.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-map-marker-alt text-blue-400 mr-4 w-6"></i>
+                        <div>
+                            <span class="text-gray-300 font-medium">Location:</span>
+                            <span class="text-white ml-2">Hyderabad, India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex justify-center space-x-6">
+                <a href="mailto:om.jhitri@tericsoft.com" class="text-blue-400 hover:text-blue-300 transition-colors transform hover:scale-110">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </a>
+                <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors transform hover:scale-110">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors transform hover:scale-110">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors transform hover:scale-110">
+                    <i class="fab fa-twitter text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
